@@ -28,9 +28,9 @@ class BackgroundProcessController extends BaseController {
         return;
     }
     public function createChanelsCron() {
-        $chanels=Chanel::getInstance()->getOneObjectByField(array());
-        foreach ($chanels as $chanel) {
-            BackgroundProcess::getInstance()->throwProcess("/crons/chanels/".$chanel->id,array());
+        $chanels=Chanel::getInstance()->getObjectsByField(array());
+        foreach ($chanels as $key => $chanel) {
+            BackgroundProcess::getInstance()->throwProcess("crons/chanels/".$chanel->id,array());
         }
     }
     public function createMoviesCron($chanel_id) {
@@ -51,7 +51,7 @@ class BackgroundProcessController extends BaseController {
 
             $match_title=$item->children[0]->children[1]->children[0]->nodes[0]->text();
 
-            BackgroundProcess::getInstance()->throwProcess("/crons/chanels/movie",
+            BackgroundProcess::getInstance()->throwProcess("crons/chanels/movie",
                 array('chanel_id'=>$chanel_id,'link'=>$link,'title'=>$match_title));
         }
     }

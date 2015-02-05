@@ -69,7 +69,7 @@ class BackgroundProcess extends ModelBase{
                 array(Input::server("SERVER_ADDR"), $url, 'hight')
             );
             $id = DB::getPdo()->lastInsertId();
-            BackgroundProcess::getInstance()->process($id);
+            //BackgroundProcess::getInstance()->process($id);
             return true;
         } catch ( Exception $e ) {
             return false;
