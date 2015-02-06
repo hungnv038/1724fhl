@@ -47,7 +47,7 @@ class Chanel extends ModelBase{
     {
         $movie_ids=array_keys($matchs);
 
-        $movies=Movie::getInstance()->getObjectsByFields(array('id'=>$movie_ids));
+        $movies=Movie::getInstance()->getObjectsByFields(array('id'=>$movie_ids,'chanel_id'=>array($chanel_id)));
 
         $existed_ids=array();
         foreach ($movies as $movie) {
@@ -69,10 +69,11 @@ class Chanel extends ModelBase{
                 'created_at'=>array('now()'),
                 'title'=>$match->title,
                 'url'=>$match->url,
-                'chanel_id'=>$chanel_id
+                'chanel_id'=>$chanel_id,
+                'match_url'=>$match->match_url
                 );
         }
-        Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id'),$movie_inputs);
+        Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url'),$movie_inputs);
     }
 
 

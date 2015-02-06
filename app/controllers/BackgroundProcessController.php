@@ -49,6 +49,11 @@ class BackgroundProcessController extends BaseController {
 
             $link=$link->attr["href"];
 
+            $movie=Movie::getInstance()->getOneObjectByField(array('chanel_id'=>$chanel_id,'match_url'=>$link));
+            if($movie!=null) {
+                continue;
+            }
+
             $match_title=$item->children[0]->children[1]->children[0]->nodes[0]->text();
 
             BackgroundProcess::getInstance()->throwProcess("crons/chanels/movie",
@@ -63,10 +68,11 @@ class BackgroundProcessController extends BaseController {
 
         $match=new stdClass();
         $match->title=$title;
+        $match->match_url=$link;
 
         $this->getMatchInfo($link,$match);
 
-        Chanel::getInstance()->insertMovies($chanel_id,array($match));
+        Chanel::getInstance()->insertMovies($chanel_id,array($match->id=>$match));
     }
 
     private function getMatchInfo($match_link,&$match_info) {
