@@ -28,6 +28,7 @@ class BackgroundProcessController extends BaseController {
         return;
     }
     public function createChanelsCron() {
+        Log::info("Crons/Chanels run");
         $chanels=Chanel::getInstance()->getObjectsByField(array());
         foreach ($chanels as $key => $chanel) {
             BackgroundProcess::getInstance()->throwProcess("crons/chanels/".$chanel->id,array());
