@@ -19,8 +19,8 @@ Route::get('/test/{id}','HighlightController@getFHL');
 
 // CRONS
 Route::get('/crons/chanels/movie','BackgroundProcessController@loadMovieInfo');
-Route::get('/crons/chanles/{id}','BackgroundProcessController@createMoviesCron');
-Route::get('/crons/chanles','BackgroundProcessController@createChanelsCron');
+Route::get('/crons/chanels/{id}','BackgroundProcessController@createMoviesCron');
+Route::get('/crons/chanels','BackgroundProcessController@createChanelsCron');
 
 // LOGS
 Route::post('/deletelogs','LogController@deleteLog');
