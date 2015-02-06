@@ -18,6 +18,9 @@ Route::get('/', function()
 Route::get('/test/{id}','HighlightController@getFHL');
 
 // CRONS
+
+Route::get('/cron','BackgroundProcessController@cron');
+
 Route::get('/crons/chanels/movie','BackgroundProcessController@loadMovieInfo');
 Route::get('/crons/chanels/{id}','BackgroundProcessController@createMoviesCron');
 Route::get('/crons/chanels','BackgroundProcessController@createChanelsCron');
