@@ -51,5 +51,22 @@ class Movie extends ModelBase {
             }
         }
     }
+    public function composeResponse($movie) {
+        // input is object, not array
+        $movie->created_at=intval(strtotime($movie->created_at));
+        $movie->updated_at=intval(strtotime($movie->updated_at));
+        $movie->chanel_id=intval($movie->chanel_id);
+        unset($movie->match_url);
+        return $movie;
+    }
+    public function getByChanelId($chanel_id,$since,$limit) {
+        $sql="select * from movie
+              where chanel_id=? and unix_timestamp(movie.created_at) < ?
+              order by movie.created_at DESC
+              limit 0, ?";
+        $result=DBConnection::read()->select($sql,array($chanel_id,$since,$limit));
+
+        return $result;
+    }
 
 } 

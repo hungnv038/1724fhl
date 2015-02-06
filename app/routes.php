@@ -13,9 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return "This is Michael server. normal user should not access here. Thanks";
 });
-Route::get('/test/{id}','HighlightController@getFHL');
+
+// DEVICES
+Route::post('/devices','DeviceControllers@register');
+
+// MOVIES
+Route::get('/chanels','ChanelControllers@getList');
+Route::get('/chanels/{id}','ChanelControllers@get');
 
 // CRONS
 

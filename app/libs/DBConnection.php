@@ -6,6 +6,7 @@ class DBConnection
 
     public static function write()
     {
+        if(self::$db) return self::$db;
         self::$db = DB::connection("mysql");
         return self::$db;
     }
@@ -13,6 +14,8 @@ class DBConnection
     public static function read()
     {
         if (self::$db) return self::$db;
-        return DB::connection("mysql"); //Slave
+        self::$db= DB::connection("mysql"); //Slave
+
+        return self::$db;
     }
 }

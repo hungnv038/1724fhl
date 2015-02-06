@@ -7,34 +7,39 @@
  */
 
 class ChanelControllers extends BaseController {
-    public function add()
-    {
+    public function get($id) {
         try {
-            $name=InputHelper::getInput('name',true);
+            $device_id=Device::getInstance()->authentication();
+            if(!Chanel::getInstance()->isValid($id)) {
+                throw new APIException("CHANEL ID INVALID",APIException::ERRORCODE_INVALID_INPUT);
+            }
+            $limit=InputHelper::getInput('limit',false,10);
+            $since=InputHelper::getInput('since',false,time()*1000);
+            $response=Chanel::getInstance()->get($id,$since,$limit);
 
-            $chanel=Chanel::getInstance();
-            if($chanel->isValid($name)) {
-                // exist name before ==> throw error
-                throw new APIException("Chanel name already exist",APIException::ERRORCODE_DONE_ALREADY);
+            return ResponseBuilder::success($response);
+
+        }catch (Exception $e) {
+            return ResponseBuilder::error($e);
+        }
+    }
+    public function getList() {
+        try {
+            $device_id=Device::getInstance()->authentication();
+            $chanels=Chanel::getInstance()->getObjectsByField(array());
+
+            $response=array();
+
+            foreach ($chanels as $chanel) {
+                $chanel_obj=Chanel::getInstance()->composeResponse($chanel,array());
+
+                $response[]=$chanel_obj;
             }
 
-            $chanel->insert(array('name'=>$name));
-
-            return ResponseBuilder::success();
+            return ResponseBuilder::success(array('id'=>$device_id,'chanels'=>$response));
 
         } catch(Exception $e) {
             return ResponseBuilder::error($e);
         }
-
-    }
-    public function get($id) {
-
-    }
-    public function getList()
-    {
-
-    }
-    public function follow($id) {
-
     }
 } 
