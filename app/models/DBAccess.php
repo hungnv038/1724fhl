@@ -25,12 +25,14 @@ class DBAccess {
                 throw new APIException("insert param invalid",APIException::ERRORCODE_LACK_PARAMETER);
             }
 
-            $values=$this->formatValue(array_values($param));
+            $result=$this->formatValue(array_values($param));
+            $values=$result['values'];
+            $binding=$result['binding'];
             $sql="insert into ".$this->table_name." (".implode(',',array_keys($param)).") values (".implode(",",$values).")";
 
             $db = DBConnection::write();
 
-            $db->insert($sql);
+            $db->insert($sql,$binding);
 
             return $db->getPdo()->lastInsertId();
         } else {
@@ -42,16 +44,18 @@ class DBAccess {
     private function formatValue($value_inputs) {
         if(isset($value_inputs)) {
             $values=array();
+            $binding=array();
             foreach($value_inputs as $val) {
                 if(is_array($val)) {
                     $values[]=array_shift($val);
                 } else {
-                    $values[]="'".$val."'";
+                    $values[]="?";
+                    $binding[]=$val;
                 }
             }
-            return $values;
+            return array('values'=>$values,'binding'=>$binding);
         } else {
-            return array();
+            return array('values'=>array(),'binding'=>array());
         }
     }
     /**
@@ -73,6 +77,8 @@ class DBAccess {
 
             $exist_in_where=array();
 
+            $binding=array();
+
             $sets=array();
             $wheres=array();
             foreach ($set_Params as $key => $value) {
@@ -82,7 +88,8 @@ class DBAccess {
                 if(is_array($value)) {
                     $sets[]=$key."=".array_shift($value);
                 } else {
-                    $sets[]=$key."='".$value."'";
+                    $sets[]=$key."=?";
+                    $binding[]=$value;
                 }
             }
 
@@ -90,13 +97,14 @@ class DBAccess {
                 if(is_array($value)) {
                     $wheres[]=$key."=".array_shift($value);
                 } else {
-                    $wheres[]=$key."='".$value."'";
+                    $wheres[]=$key."=?";
+                    $binding[]=$value;
                 }
             }
 
             $sql="Update {$this->table_name} set ".implode(",",$sets)." where ".implode(" and ",$wheres);
 
-            DBConnection::write()->update($sql);
+            DBConnection::write()->update($sql,$binding);
             // correct where clause, use when update cache object only
             foreach ($exist_in_where  as $key=>$value) {
                 $where[$key]=$value;
@@ -127,47 +135,24 @@ class DBAccess {
             if($where==null || (isset($where) && count($where)==0)) {
                 throw new APIException("delete param invalid",APIException::ERRORCODE_LACK_PARAMETER);
             }
-            $values=$this->formatValue($where);
-
             $fields=array();
+            $binding=array();
 
-            foreach (array_keys($where) as $field) {
-                $fields[]=$field." = ?";
+            foreach ($where as $key => $value) {
+                $fields[]=$key."=?";
+                if(is_array($value)) {
+                    $binding=array_shift($value);
+                } else {
+                    $binding[]=$value;
+                }
             }
 
 
             $sql="DELETE FROM {$this->table_name} WHERE ".implode(" and ",$fields);
 
-            DBConnection::write()->delete($sql,$values);
+            return DBConnection::write()->delete($sql,$binding);
         }
-    }
-
-    /**
-     * @param $where : where clause for find query
-     */
-    public function find($where)
-    {
-        if(isset($this->table_name)) {
-            if($where==null || (isset($where) &&count($where)==0)) {
-                return DBConnection::read()->select("select * from {$this->table_name}");
-            } else {
-                $wheres=array();
-                foreach ($where as $key => $value) {
-                    if(is_array($value)) {
-                        $wheres[]=$key."=".array_shift($value);
-                    } else {
-                        $wheres[]=$key."='".$value."'";
-                    }
-                }
-
-                $sql="select * from {$this->table_name} where ".implode(" and ",$wheres);
-
-                return DBConnection::read()->select($sql);
-            }
-
-        } else {
-            throw new APIException("Table name invalid",APIException::ERRORCODE_INVALID_INPUT);
-        }
+        return false;
     }
 
     /**
@@ -178,6 +163,7 @@ class DBAccess {
      */
     public function inserts($fields = array(), $fieldValues = array()) {
         $values = array();
+        $binding=array();
         foreach($fieldValues as $value){
             if(is_array($value)) {
                 $valueArr = array();
@@ -187,10 +173,12 @@ class DBAccess {
                         if(is_array($val)) {
                             $valueArr[] = array_shift($val);
                         } else {
-                            $valueArr[] = "'". $val. "'";
+                            $valueArr[] = "?";
+                            $binding[]=$val;
                         }
                     } else {
-                        $valueArr[] = "''";
+                        $valueArr[] = "?";
+                        $binding[]='';
                     }
                 }
                 $values[] = "(". implode(",", $valueArr) .")";
@@ -199,7 +187,7 @@ class DBAccess {
         if(count($fields) && count($values)) {
             $sql = "INSERT INTO {$this->table_name} (". implode(',', $fields) .") VALUES ". implode(',', $values);
             $db = DBConnection::write();
-            $db->insert($sql);
+            $db->insert($sql,$binding);
             $first_id= $db->getPdo()->lastInsertId();
 
             $ids=array();
