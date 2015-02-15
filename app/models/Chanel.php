@@ -101,7 +101,9 @@ class Chanel extends ModelBase{
                 'title'=>$match->title,
                 'url'=>$match->url,
                 'chanel_id'=>$chanel_id,
-                'match_url'=>$match->match_url
+                'match_url'=>$match->match_url,
+                'thumb'=>$match->thumb
+
                 );
         }
         Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url'),$movie_inputs);

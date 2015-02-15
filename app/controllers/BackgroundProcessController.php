@@ -45,6 +45,8 @@ class BackgroundProcessController extends BaseController {
         $result=$html->find(".post-outer");
 
         foreach($result as $item) {
+            $thumb=$item->children[0]->children[0]->children[0];
+            $thumb=$thumb->attr["src"];
 
             $link=$item->children[0]->children[1]->children[0];
 
@@ -58,7 +60,7 @@ class BackgroundProcessController extends BaseController {
             $match_title=$item->children[0]->children[1]->children[0]->nodes[0]->text();
 
             BackgroundProcess::getInstance()->throwProcess("crons/chanels/movie",
-                array('chanel_id'=>$chanel_id,'link'=>$link,'title'=>$match_title));
+                array('chanel_id'=>$chanel_id,'link'=>$link,'title'=>$match_title,'thumb'=>$thumb));
         }
     }
 
@@ -66,10 +68,12 @@ class BackgroundProcessController extends BaseController {
         $chanel_id=InputHelper::getInput('chanel_id',true);
         $link=InputHelper::getInput('link',true);
         $title=InputHelper::getInput('title',true);
+        $thumb=InputHelper::getInput('thumb',true);
 
         $match=new stdClass();
         $match->title=$title;
         $match->match_url=$link;
+        $match->thumb=$thumb;
 
         $this->getMatchInfo($link,$match);
 
