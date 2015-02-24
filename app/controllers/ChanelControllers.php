@@ -14,7 +14,7 @@ class ChanelControllers extends BaseController {
                 throw new APIException("CHANEL ID INVALID",APIException::ERRORCODE_INVALID_INPUT);
             }
             $limit=InputHelper::getInput('limit',false,10);
-            $since=InputHelper::getInput('since',false,time()*1000);
+            $since=InputHelper::getInput('since',false,time());
             $response=Chanel::getInstance()->get($id,$since,$limit);
 
             return ResponseBuilder::success($response);
