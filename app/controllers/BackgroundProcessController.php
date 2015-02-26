@@ -72,7 +72,7 @@ class BackgroundProcessController extends BaseController {
 
         $this->getMatchInfo($link,$match);
 
-        Chanel::getInstance()->insertMovies($chanel_id,array($match->id=>$match));
+        Chanel::getInstance()->insertMovies($chanel_id,array($match->match_url=>$match));
     }
 
     private function getMatchInfo($match_link,&$match_info) {

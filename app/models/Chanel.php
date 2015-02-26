@@ -76,24 +76,24 @@ class Chanel extends ModelBase{
 
     public function insertMovies($chanel_id,$matchs)
     {
-        $movie_ids=array_keys($matchs);
+        $match_urls=array_keys($matchs);
 
-        $movies=Movie::getInstance()->getObjectsByFields(array('id'=>$movie_ids,'chanel_id'=>array($chanel_id)));
+        $movies=Movie::getInstance()->getObjectsByFields(array('match_url'=>$match_urls,'chanel_id'=>array($chanel_id)));
 
-        $existed_ids=array();
+        $existed_urls=array();
         foreach ($movies as $movie) {
-            $existed_ids[]=$movie->id;
+            $existed_urls[]=$movie->match_url;
         }
 
-        $not_exist_ids=array_diff($movie_ids,$existed_ids);
+        $not_exist_urls=array_diff($match_urls,$existed_urls);
 
-        if(count($not_exist_ids)==0) {
+        if(count($not_exist_urls)==0) {
             return;
         }
         $movie_inputs=array();
 
-        foreach ($not_exist_ids as $movie_id) {
-            $match=$matchs[$movie_id];
+        foreach ($not_exist_urls as $url) {
+            $match=$matchs[$url];
 
             $movie_inputs[]=array(
                 'id'=>$match->id,
@@ -107,14 +107,14 @@ class Chanel extends ModelBase{
         }
         Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url','thumb'),$movie_inputs);
 
-        if(count($existed_ids)>0) {
+        if(count($existed_urls)>0) {
             $urls=array();
-            foreach($existed_ids as $id) {
-                $match=$matchs[$id];
+            foreach($existed_urls as $url) {
+                $match=$matchs[$url];
 
                 $urls[]=$match->url;
             }
-            Movie::getInstance()->updates(array('ids'=>$existed_ids,'urls'=>$urls));
+            Movie::getInstance()->updates(array('match_urls'=>$existed_urls,'urls'=>$urls));
         }
     }
 
