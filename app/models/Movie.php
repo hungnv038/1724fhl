@@ -60,10 +60,16 @@ class Movie extends ModelBase {
         return $movie;
     }
     public function getByChanelId($chanel_id,$since,$limit) {
+        if($chanel_id==17) {
+            $last_chanel=" and dayofmonth(now())- dayofmonth(created_at)<2";
+        } else {
+            $last_chanel="";
+        }
+
         $sql="select id,chanel_id,title,url,match_url,thumb,
               unix_timestamp(movie.created_at) as created_at,
               unix_timestamp(movie.updated_at) as updated_at from movie
-              where chanel_id=? and unix_timestamp(movie.created_at) < ?
+              where chanel_id=? and unix_timestamp(movie.created_at) < ? {$last_chanel}
               order by movie.created_at DESC
               limit 0, ?";
         $result=DBConnection::read()->select($sql,array($chanel_id,$since,$limit));
