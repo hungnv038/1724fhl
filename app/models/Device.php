@@ -40,6 +40,7 @@ class Device extends ModelBase{
         if(!$this->isValid($device_id)) {
             throw new APIException("INVALID ACCESS TOKEN",APIException::ERRORCODE_INVALID_TOKEN);
         }
+        $this->update(array('last_login'=>array('now()')),array('id'=>$device_id));
         return $device_id;
     }
 } 
