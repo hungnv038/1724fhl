@@ -71,4 +71,32 @@ class Movie extends ModelBase {
         return $result;
     }
 
+    public function updates($field_values)
+    {
+        if(array_key_exists('ids',$field_values)) {
+            $ids=$field_values['ids'];
+            if(!is_array($ids)) $ids=array($ids);
+        } else {
+            return -1;
+        }
+        if(array_key_exists('urls',$field_values)) {
+            $urls=$field_values['urls'];
+            if(!is_array($urls)) $urls=array($urls);
+        } else {
+            return -1;
+        }
+
+        $sql="UPDATE movie SET url= CASE ";
+        $index=0;
+        foreach ($ids as $id) {
+            $sql.=" WHEN id={$id}  THEN {$urls[$index]} ";
+            $index++;
+        }
+        $sql.=" END
+                WHERE id IN ('".implode("','",$ids)."'))";
+
+        DBConnection::write()->update($sql);
+    }
+
+
 } 

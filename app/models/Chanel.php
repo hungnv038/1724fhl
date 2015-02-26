@@ -103,10 +103,19 @@ class Chanel extends ModelBase{
                 'chanel_id'=>$chanel_id,
                 'match_url'=>$match->match_url,
                 'thumb'=>$match->thumb
-
                 );
         }
         Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url','thumb'),$movie_inputs);
+
+        if(count($existed_ids)>0) {
+            $urls=array();
+            foreach($existed_ids as $id) {
+                $match=$matchs[$id];
+
+                $urls[]=$match->url;
+            }
+            Movie::getInstance()->updates(array('ids'=>$existed_ids,'urls'=>$urls));
+        }
     }
 
 
