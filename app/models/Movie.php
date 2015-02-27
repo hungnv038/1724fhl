@@ -95,11 +95,11 @@ class Movie extends ModelBase {
         $sql="UPDATE movie SET url= CASE ";
         $index=0;
         foreach ($match_urls as $id) {
-            $sql.=" WHEN match_url={$id}  THEN {$urls[$index]} ";
+            $sql.=" WHEN match_url='".$id."'  THEN '".$urls[$index]."' ";
             $index++;
         }
         $sql.=" END
-                WHERE match_url IN ('".implode("','",$match_urls)."'))";
+                WHERE match_url IN ('".implode("','",$match_urls)."')";
 
         DBConnection::write()->update($sql);
     }

@@ -87,27 +87,27 @@ class Chanel extends ModelBase{
 
         $not_exist_urls=array_diff($match_urls,$existed_urls);
 
-        if(count($not_exist_urls)==0) {
-            return;
-        }
-        $movie_inputs=array();
+        if(count($not_exist_urls)>0) {
+            $movie_inputs=array();
 
-        foreach ($not_exist_urls as $url) {
-            $match=$matchs[$url];
+            foreach ($not_exist_urls as $url) {
+                $match=$matchs[$url];
 
-            $movie_inputs[]=array(
-                'id'=>$match->id,
-                'created_at'=>array('now()'),
-                'title'=>$match->title,
-                'url'=>$match->url,
-                'chanel_id'=>$chanel_id,
-                'match_url'=>$match->match_url,
-                'thumb'=>$match->thumb
+                $movie_inputs[]=array(
+                    'id'=>$match->id,
+                    'created_at'=>array('now()'),
+                    'title'=>$match->title,
+                    'url'=>$match->url,
+                    'chanel_id'=>$chanel_id,
+                    'match_url'=>$match->match_url,
+                    'thumb'=>$match->thumb
                 );
+            }
+            Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url','thumb'),$movie_inputs);
         }
-        Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url','thumb'),$movie_inputs);
 
         if(count($existed_urls)>0) {
+            $existed_urls=array_unique($existed_urls);
             $urls=array();
             foreach($existed_urls as $url) {
                 $match=$matchs[$url];
