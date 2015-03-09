@@ -37,3 +37,6 @@ Route::get('/logs','LogController@getLog');
 Route::get('/apidocs','LogController@getApiDocs');
 Route::get('/getApiDoc','LogController@getApiDoc');
 Route::match(array('GET', 'POST'), '/setApiDoc','LogController@setApiDoc');
+
+// Feedback
+Route::post('/feedback','FeedbackController@feedback');
