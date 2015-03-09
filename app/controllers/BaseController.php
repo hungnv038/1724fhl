@@ -12,6 +12,8 @@ class BaseController extends Controller {
 		}
 
 		InputHelper::setInputArray( $input );
+
+        Log::info("Request Input:".json_encode(InputHelper::getAllInput()));
 	}
 
 }
