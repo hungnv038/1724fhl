@@ -33,10 +33,10 @@
         <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4398907" vertical-offset="883" max-vertical-offset="1944">
-              <caret line="63" column="67" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
+              <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
               <folding>
-                <marker date="1426170524000" expanded="true" signature="2108:2446" placeholder="select id,ch..movie..." />
-                <marker date="1426170524000" expanded="true" signature="3059:3085" placeholder="UPDATE movie..." />
+                <marker date="1426170600000" expanded="true" signature="2109:2447" placeholder="select id,ch..movie..." />
+                <marker date="1426170600000" expanded="true" signature="3060:3086" placeholder="UPDATE movie..." />
               </folding>
             </state>
           </provider>
@@ -808,10 +808,10 @@
     <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4398907" vertical-offset="883" max-vertical-offset="1944">
-          <caret line="63" column="67" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
+          <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
           <folding>
-            <marker date="1426170524000" expanded="true" signature="2108:2446" placeholder="select id,ch..movie..." />
-            <marker date="1426170524000" expanded="true" signature="3059:3085" placeholder="UPDATE movie..." />
+            <marker date="1426170600000" expanded="true" signature="2109:2447" placeholder="select id,ch..movie..." />
+            <marker date="1426170600000" expanded="true" signature="3060:3086" placeholder="UPDATE movie..." />
           </folding>
         </state>
       </provider>
