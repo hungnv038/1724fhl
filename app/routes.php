@@ -40,3 +40,5 @@ Route::match(array('GET', 'POST'), '/setApiDoc','LogController@setApiDoc');
 
 // Feedback
 Route::post('/feedback','FeedbackController@feedback');
+
+Route::get('/videos/{id}','YoutubeController@getVideo');

@@ -61,7 +61,7 @@ class Movie extends ModelBase {
     }
     public function getByChanelId($chanel_id,$since,$limit) {
         if($chanel_id==17) {
-            $last_chanel=" and dayofmonth(now())- dayofmonth(created_at)<=2";
+            $last_chanel=" and to_days(now())- to_days(created_at)<=2";
         } else {
             $last_chanel="";
         }
