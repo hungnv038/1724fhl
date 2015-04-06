@@ -63,12 +63,12 @@ class BackgroundProcessController extends BaseController {
         $chanel_id=InputHelper::getInput('chanel_id',true);
         $link=InputHelper::getInput('link',true);
         $title=InputHelper::getInput('title',true);
-        ///$thumb=InputHelper::getInput('thumb',true);
+        $thumb=InputHelper::getInput('thumb',true);
 
         $match=new stdClass();
         $match->title=$title;
         $match->match_url=$link;
-        //$match->thumb=$thumb;
+        $match->thumb=$thumb;
 
         $this->getMatchInfo($link,$match);
 

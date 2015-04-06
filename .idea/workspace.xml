@@ -2,176 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a70f17-3f5e-4e14-a237-8566756fb955" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/.gitkeep" afterPath="$PROJECT_DIR$/public/packages/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess.template" afterPath="$PROJECT_DIR$/public/.htaccess.template" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" afterPath="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/LICENSE.txt" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_core.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_core.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_list.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_list.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_path.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_path.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_spinning.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_spinning.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_spinning.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_spinning.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ar_MA.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ar_MA.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/backbone-min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/backbone-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/be_FR.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/be_FR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/be_NL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/be_NL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/bg_BG.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/bg_BG.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/bootstrap-min.css" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/css/bootstrap-treeview.css" afterPath="$PROJECT_DIR$/public/admin/css/bootstrap-treeview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/bootstrap-treeview.css" afterPath="$PROJECT_DIR$/public/admintheme/css/bootstrap-treeview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/bootstrap-treeview.js" afterPath="$PROJECT_DIR$/public/admin/js/bootstrap-treeview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/bootstrap-treeview.js" afterPath="$PROJECT_DIR$/public/admintheme/js/bootstrap-treeview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/admin/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/admintheme/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/admin/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/admintheme/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/admin/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/admintheme/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/admin/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/css/bootstrapValidator.css" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/css/bootstrapValidator.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/bootstrapValidator.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/bootstrapValidator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/css/bootstrapValidator.min.css" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/css/bootstrapValidator.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/bootstrapValidator.min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/bootstrapValidator.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ca_ES.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ca_ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/core.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/core.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/cs_CZ.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/cs_CZ.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/da_DK.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/da_DK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/de_DE.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/de_DE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/en_US.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/en_US.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/es_CL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/es_CL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/es_ES.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/es_ES.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/flot/excanvas.min.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/flot/excanvas.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/excanvas.min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/excanvas.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/fa_IR.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/fa_IR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/feedback.php" afterPath="$PROJECT_DIR$/public/assets/css/feedback.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/flot/flot-data.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/flot/flot-data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/flot-data.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/flot-data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/fr_FR.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/fr_FR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/admin/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/admintheme/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/gr_EL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/gr_EL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/he_IL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/he_IL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/hu_HU.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/hu_HU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/icons.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/icons.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/id_ID.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/id_ID.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/it_IT.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/it_IT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ja_JP.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ja_JP.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/jquery-1.11.0.js" afterPath="$PROJECT_DIR$/public/admin/js/jquery-1.11.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/jquery-1.11.0.js" afterPath="$PROJECT_DIR$/public/admintheme/js/jquery-1.11.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.tooltip.min.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/flot/jquery.flot.tooltip.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.tooltip.min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/flot/jquery.flot.tooltip.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/jquery.rowsorter.js" afterPath="$PROJECT_DIR$/public/admintheme/js/jquery.rowsorter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/larger.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/larger.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/layout-package.css" afterPath="$PROJECT_DIR$/public/admintheme/css/layout-package.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/list.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/list.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/mixins.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/mixins.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/morris/morris-data.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/morris/morris-data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/morris-data.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/morris-data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/css/plugins/morris.css" afterPath="$PROJECT_DIR$/public/admin/css/plugins/morris.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/plugins/morris.css" afterPath="$PROJECT_DIR$/public/admintheme/css/plugins/morris.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/morris/morris.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/morris/morris.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/morris.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/morris.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/morris/morris.min.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/morris/morris.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/morris.min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/morris.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/nl_NL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/nl_NL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/no_NO.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/no_NO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/package/package.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/package/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/path.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/path.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/pl_PL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/pl_PL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/pretty-json-min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/pretty-json-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/pretty-json.css" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/pretty-json.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/pt_BR.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/pt_BR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/pt_PT.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/pt_PT.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/js/plugins/morris/raphael.min.js" afterPath="$PROJECT_DIR$/public/admin/js/plugins/morris/raphael.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/raphael.min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/morris/raphael.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ro_RO.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ro_RO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ru_RU.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ru_RU.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/css/sb-admin-2.css" afterPath="$PROJECT_DIR$/public/admin/css/sb-admin-2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/sb-admin-2.css" afterPath="$PROJECT_DIR$/public/admintheme/css/sb-admin-2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/css/sb-admin.css" afterPath="$PROJECT_DIR$/public/admin/css/sb-admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/css/sb-admin.css" afterPath="$PROJECT_DIR$/public/admintheme/css/sb-admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/spinning.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/spinning.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/spinning.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/spinning.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/sq_AL.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/sq_AL.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/sr_RS.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/sr_RS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/stacked.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/stacked.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/sv_SE.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/sv_SE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/th_TH.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/th_TH.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/tr_TR.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/tr_TR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ua_UA.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/ua_UA.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/underscore-min.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/pretty/underscore-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/variables.less" afterPath="$PROJECT_DIR$/public/admin/font-awesome-4.1.0/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/variables.less" afterPath="$PROJECT_DIR$/public/admintheme/font-awesome-4.1.0/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/vi_VN.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/vi_VN.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/zh_CN.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/zh_CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/zh_TW.js" afterPath="$PROJECT_DIR$/public/admintheme/js/plugins/bootstrapvalidator/js/language/zh_TW.js" />
     </list>
     <ignored path="1724fhl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -200,7 +32,7 @@
       <file leaf-file-name="YoutubeVideoHelper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/libs/YoutubeVideoHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="228" max-vertical-offset="3021">
+            <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="3021">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
@@ -274,7 +106,7 @@
       <file leaf-file-name="Movie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.68" vertical-offset="265" max-vertical-offset="2052">
+            <state vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="2052">
               <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding>
                 <marker date="1426170600000" expanded="true" signature="2109:2447" placeholder="select id,ch..movie..." />
@@ -287,10 +119,10 @@
       <file leaf-file-name="BackgroundProcessController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7780679" vertical-offset="1374" max-vertical-offset="2850">
-              <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.34384385" vertical-offset="1006" max-vertical-offset="2850">
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
               <folding>
-                <marker date="1428302320000" expanded="true" signature="4429:4514" placeholder="INSERT INTO ..." />
+                <marker date="1428305381000" expanded="true" signature="4416:4501" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -299,7 +131,7 @@
       <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.44" vertical-offset="13715" max-vertical-offset="21432">
+            <state vertical-scroll-proportion="0.0" vertical-offset="13715" max-vertical-offset="21432">
               <caret line="748" column="0" selection-start-line="748" selection-start-column="0" selection-end-line="748" selection-end-column="0" />
               <folding />
             </state>
@@ -536,9 +368,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -546,6 +375,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="false" name="1724fhl" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="1724fhl">
@@ -576,22 +408,22 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32545203" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39360222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39914164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4048641" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39360222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -714,7 +546,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="2520">
           <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
           <folding>
-            <marker date="1428302320000" expanded="true" signature="4429:4514" placeholder="INSERT INTO ..." />
+            <marker date="1428305381000" expanded="true" signature="4416:4501" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -955,7 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="760">
           <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.68" vertical-offset="265" max-vertical-offset="2052">
+        <state vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="2052">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
             <marker date="1426170600000" expanded="true" signature="2109:2447" placeholder="select id,ch..movie..." />
@@ -1040,7 +871,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.44" vertical-offset="13715" max-vertical-offset="21432">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13715" max-vertical-offset="21432">
           <caret line="748" column="0" selection-start-line="748" selection-start-column="0" selection-end-line="748" selection-end-column="0" />
           <folding />
         </state>
@@ -1048,10 +879,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7780679" vertical-offset="1374" max-vertical-offset="2850">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.34384385" vertical-offset="1006" max-vertical-offset="2850">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
           <folding>
-            <marker date="1428302320000" expanded="true" signature="4429:4514" placeholder="INSERT INTO ..." />
+            <marker date="1428305381000" expanded="true" signature="4416:4501" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
