@@ -83,7 +83,7 @@ class BackgroundProcessController extends BaseController {
 
         $post=$post[0]->attr["data-config"];
 
-        if(strpos("http:",$post)==false) {
+        if(strpos($post,"http:")==false) {
             $post="http:".$post;
         }
 
