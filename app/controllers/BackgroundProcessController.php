@@ -83,8 +83,11 @@ class BackgroundProcessController extends BaseController {
 
         $post=$post[0]->attr["data-config"];
 
-        if(strpos($post,"http:")==false) {
+        if(!filter_var($post,FILTER_VALIDATE_URL)) {
             $post="http:".$post;
+        }
+        if(!filter_var($post,FILTER_VALIDATE_URL)) {
+            throw new APIException("URL ".$post." is invalid");
         }
 
         $content=file_get_contents($post);
