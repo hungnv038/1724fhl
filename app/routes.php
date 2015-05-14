@@ -30,6 +30,8 @@ Route::get('/cron','BackgroundProcessController@cron');
 Route::get('/crons/chanels/movie','BackgroundProcessController@loadMovieInfo');
 Route::get('/crons/chanels/{id}','BackgroundProcessController@createMoviesCron');
 Route::get('/crons/chanels','BackgroundProcessController@createChanelsCron');
+Route::get('/crons/video/upload','BackgroundProcessController@uploadVideo');
+Route::get('/crons/video/download','BackgroundProcessController@downloadVideo');
 
 // LOGS
 Route::post('/deletelogs','LogController@deleteLog');
@@ -42,3 +44,9 @@ Route::match(array('GET', 'POST'), '/setApiDoc','LogController@setApiDoc');
 Route::post('/feedback','FeedbackController@feedback');
 
 Route::get('/videos/{id}','YoutubeController@getVideo');
+
+Route::get('/test',function() {
+    $link="http://cdn.phoenix.intergi.com/18132/videos/3576547/video-sd.mp4?hosting_id=18132";
+    $motion="xdcsxc";
+    Movie::getInstance()->update(array('dailymotion_url'=>$motion),array('url'=>$link));
+});

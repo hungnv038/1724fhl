@@ -74,47 +74,43 @@ class Chanel extends ModelBase{
         return (object)$new_object;
     }
 
-    public function insertMovies($chanel_id,$matchs)
+    public function insertMovie($chanel_id,$matchs)
     {
-        $match_urls=array_keys($matchs);
+        $movie=Movie::getInstance()->getOneObjectByField(array('match_url'=>$matchs->match_url,'chanel_id'=>$chanel_id));
 
-        $movies=Movie::getInstance()->getObjectsByFields(array('match_url'=>$match_urls,'chanel_id'=>array($chanel_id)));
+        if($movie==null) {
+            // insert new
+            $movie_input=array(
+                'id'=>$matchs->id,
+                'created_at'=>array('now()'),
+                'title'=>$matchs->title,
+                'url'=>$matchs->url,
+                'chanel_id'=>$chanel_id,
+                'match_url'=>$matchs->match_url,
+                'thumb'=>$matchs->thumb
+            );
+            Movie::getInstance()->insert($movie_input);
+            BackgroundProcess::getInstance()->throwProcess(
+                "/crons/video/download",
+                array(
+                'url'=>$matchs->url,
+                'title'=>$matchs->title
+                ));
 
-        $existed_urls=array();
-        foreach ($movies as $movie) {
-            $existed_urls[]=$movie->match_url;
-        }
+        } else {
+            // update
+            if($movie->url!=$matchs->url) {
+                // update movie url
+                Movie::getInstance()->update(array('url'=>$matchs->url),array('match_url'=>$movie->match_url));
 
-        $not_exist_urls=array_diff($match_urls,$existed_urls);
-
-        if(count($not_exist_urls)>0) {
-            $movie_inputs=array();
-
-            foreach ($not_exist_urls as $url) {
-                $match=$matchs[$url];
-
-                $movie_inputs[]=array(
-                    'id'=>$match->id,
-                    'created_at'=>array('now()'),
-                    'title'=>$match->title,
-                    'url'=>$match->url,
-                    'chanel_id'=>$chanel_id,
-                    'match_url'=>$match->match_url,
-                    'thumb'=>$match->thumb
-                );
+                // create process to upload video again to dailymotion
+                BackgroundProcess::getInstance()->throwProcess(
+                    "/crons/video/download",
+                    array(
+                        'url'=>$matchs->url,
+                        'title'=>$matchs->title
+                    ));
             }
-            Movie::getInstance()->inserts(array('id','created_at','title','url','chanel_id','match_url','thumb'),$movie_inputs);
-        }
-
-        if(count($existed_urls)>0) {
-            $existed_urls=array_unique($existed_urls);
-            $urls=array();
-            foreach($existed_urls as $url) {
-                $match=$matchs[$url];
-
-                $urls[]=$match->url;
-            }
-            Movie::getInstance()->updates(array('match_urls'=>$existed_urls,'urls'=>$urls));
         }
     }
 

@@ -6,7 +6,7 @@
  * Time: 3:49 AM
  */
 
-class BackgroundProcess extends ModelBase{
+class BackgroundProcess extends DBAccess{
     private static $bgp;
     const NUMBER_LIMIT_PROCESS = 6;
 

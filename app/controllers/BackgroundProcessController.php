@@ -72,7 +72,7 @@ class BackgroundProcessController extends BaseController {
 
         $this->getMatchInfo($link,$match);
 
-        Chanel::getInstance()->insertMovies($chanel_id,array($match->match_url=>$match));
+        Chanel::getInstance()->insertMovie($chanel_id,$match);
     }
 
     private function getMatchInfo($match_link,&$match_info) {
@@ -110,38 +110,31 @@ class BackgroundProcessController extends BaseController {
 
         $match_info->url= $baseUrl."/".$xml;
     }
-    
-     /**
-     * Create all process
-     **/
-    public function cronCreateProcess() {
-        $command = 'users/me/friend-crawl';
+    public function uploadVideo() {
         try {
-            $startDate = date("Y-m-d H:i:s");
-            // Get all users and service
-            $serverAddr = Input::server("SERVER_ADDR");
-            $users = User::getAllUserServiceApp();
-            $arrValues = array(); 
-            if(isset($users)) {
-                foreach($users as $user) {
-                    // Parser Parameters
-                    $parameter['access_token'] = $user->access_token;
-                    $parameter['serviceapp'] = $user->service;
-                    //Build url
-                    $param_query = http_build_query($parameter);
-                    $url = $command . "?" . $param_query;
-                    $arrValues[] = "('waiting','{$serverAddr}','{$url}','slow',adddate(now(), interval 30 minute),now())";
-                }
-                if(count($arrValues)) {
-                    $strValues = implode(',', $arrValues);
-                    // Insert data to process table
-                    DBConnection::write()->insert("INSERT INTO process (status, ip, process, priority, scheduled_at, created_at) VALUES {$strValues}");
-                }
-            }
-            //Log::info("Create All Process", array('Start at:' => $startDate, 'Finish at: ' => date("Y-m-d H:i:s"), 'count: ' => count($arrValues)));
-        } catch (Exception $e ) {
+            $url=InputHelper::getInput("url",true);
+            $file_name=InputHelper::getInput("file_name",true);
+            $title=InputHelper::getInput("title",true);
+
+            $videoHelper=new VideoHelper();
+
+            $videoHelper->upload($file_name,$title,$url);
+        } catch(Exception $e) {
             return ResponseBuilder::error($e);
         }
-        return;
+
+    }
+    public function downloadVideo() {
+        try {
+            $link=InputHelper::getInput("url",true);
+            $title=InputHelper::getInput("title",true);
+            $videoHelper=new VideoHelper();
+            $file_name=$videoHelper->downloadVideo($link);
+
+            BackgroundProcess::throwProcess("/crons/video/upload",array('url'=>$link,'file_name'=>$file_name,'title'=>$title));
+        } catch(Exception $e) {
+            return ResponseBuilder::error($e);
+        }
+
     }
 }
