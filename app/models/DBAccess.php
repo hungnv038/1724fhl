@@ -213,4 +213,61 @@ class DBAccess {
             return false;
         }
     }
+    public function getOneObjectByField($field) {
+        $objects=$this->getObjectsByField($field);
+        if(count($objects)>0) {
+            return $objects[0];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * @param $fields : the array of field name and value
+     * @throws Exception : throw exception if this method is not implement by child class
+     * @return : array of Objects
+     */
+    public  function  getObjectsByField($fields)
+    {
+        $query=array();
+
+        foreach ($fields as $key => $value) {
+            $query[]=$key."='".$value."'";
+        }
+
+        if(count($query)==0) {
+            $sql="select * from {$this->table_name}";
+        } else {
+            $sql="select * from {$this->table_name} where ".implode(" and ",$query);
+        }
+
+        $result=DBConnection::read()->select($sql);
+        if(count($result)>0) {
+            return $result;
+        } else {
+            return array();
+        }
+    }
+
+    /**
+     * @param $fields : array of field names and value
+     * @return : array of objects
+     * @throws Exception : throw exception if this function has not yet implemented by child class
+     */
+    public function getObjectsByFields($fields)
+    {
+        if(!is_array($fields)) {
+            throw new Exception("Invalid input in getObjectsByFields from {$this->table_name} object");
+        }
+        $query=array();
+        foreach ($fields as $field =>$value) {
+            if(!is_array($value)) {$value=array($value);}
+            $query[]=$field." in ('".implode("','",$value)."') ";
+        }
+
+        $sql="select * from {$this->table_name} where ".implode(" and ",$query);
+
+        $result=DBConnection::read()->select($sql);
+        return $result;
+    }
 }

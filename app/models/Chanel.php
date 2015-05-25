@@ -6,7 +6,7 @@
  * Time: 18:01
  */
 
-class Chanel extends ModelBase{
+class Chanel extends DBAccess{
     private static $instance;
 
     public static function getInstance()
@@ -63,20 +63,9 @@ class Chanel extends ModelBase{
         return $chanel;
     }
 
-    protected function createCacheObject($id, $params)
+    public function insertMovie($matchs)
     {
-        $new_object=array(
-            'id'=>$id,
-            'created_at'=>$this->getParamValue('created_at',$params,time()),
-            'updated_at'=>$this->getParamValue('updated_at',$params,time()),
-            'name'=>$this->getParamValue('name',$params,'')
-        );
-        return (object)$new_object;
-    }
-
-    public function insertMovie($chanel_id,$matchs)
-    {
-        $movie=Movie::getInstance()->getOneObjectByField(array('match_url'=>$matchs->match_url,'chanel_id'=>$chanel_id));
+        $movie=Movie::getInstance()->getOneObjectByField(array('match_url'=>$matchs->match_url));
 
         if($movie==null) {
             // insert new
@@ -85,7 +74,6 @@ class Chanel extends ModelBase{
                 'created_at'=>array('now()'),
                 'title'=>$matchs->title,
                 'url'=>$matchs->url,
-                'chanel_id'=>$chanel_id,
                 'match_url'=>$matchs->match_url,
                 'thumb'=>$matchs->thumb
             );
@@ -101,7 +89,7 @@ class Chanel extends ModelBase{
             // update
             if($movie->url!=$matchs->url) {
                 // update movie url
-                Movie::getInstance()->update(array('url'=>$matchs->url),array('match_url'=>$movie->match_url));
+                Movie::getInstance()->update(array('url'=>$matchs->url,'is_updated'=>1),array('match_url'=>$movie->match_url));
 
                 // create process to upload video again to dailymotion
                 BackgroundProcess::getInstance()->throwProcess(

@@ -44,6 +44,9 @@ class BackgroundProcessController extends BaseController {
 
         $result=$html->find(".post-outer");
 
+        $commands=array();
+        $params=array();
+
         foreach($result as $item) {
             $thumb=$item->children[0]->children[0]->children[0];
             $thumb=$thumb->attr["src"];
@@ -53,9 +56,22 @@ class BackgroundProcessController extends BaseController {
             $link=$link->attr["href"];
 
             $match_title=$item->children[0]->children[1]->children[0]->nodes[0]->text();
+            $commands[$link]="crons/chanels/movie";
 
-            BackgroundProcess::getInstance()->throwProcess("crons/chanels/movie",
-                array('chanel_id'=>$chanel_id,'link'=>$link,'title'=>$match_title,'thumb'=>$thumb));
+            $params[$link]=array('chanel_id'=>$chanel_id,'link'=>$link,'title'=>$match_title,'thumb'=>$thumb);
+        }
+        $need_to_updates=Movie::getInstance()->getObjectsByFields(
+            array(
+                'match_url'=>array_keys($params),
+                'is_updated'=>array(1)));
+
+        foreach ($need_to_updates as $match) {
+            unset($commands[$match->match_url]);
+            unset($params[$match->match_url]);
+        }
+
+        if(count($commands)>0) {
+            BackgroundProcess::getInstance()->throwMultipleProcesses(array('command'=>array_values($commands),'parameter'=>array_values($params)));
         }
     }
 
@@ -72,7 +88,11 @@ class BackgroundProcessController extends BaseController {
 
         $this->getMatchInfo($link,$match);
 
-        Chanel::getInstance()->insertMovie($chanel_id,$match);
+        if(!ChanelMovie::getInstance()->isExistingRecord($chanel_id,$link)) {
+            ChanelMovie::getInstance()->insert(array('chanel_id'=>$chanel_id,'match_url'=>$link,'created_at'=>array('now()')));
+        }
+
+        Chanel::getInstance()->insertMovie($match);
     }
 
     private function getMatchInfo($match_link,&$match_info) {
