@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a70f17-3f5e-4e14-a237-8566756fb955" name="Default" comment="" />
+    <list default="true" id="71a70f17-3f5e-4e14-a237-8566756fb955" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/VideoHelper.php" afterPath="$PROJECT_DIR$/app/libs/VideoHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="1724fhl.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,6 +29,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="VideoHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/libs/VideoHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7692308" vertical-offset="2980" max-vertical-offset="3740">
+              <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Movie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8383372" vertical-offset="377" max-vertical-offset="1580">
+            <state vertical-scroll-proportion="-13.961538" vertical-offset="377" max-vertical-offset="1580">
               <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
               <folding>
                 <marker date="1432551968000" expanded="true" signature="1002:1486" placeholder="select id,ch..movie..." />
@@ -59,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BackgroundProcessController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BackgroundProcessController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.884617" vertical-offset="973" max-vertical-offset="3320">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39849624" vertical-offset="2655" max-vertical-offset="3320">
+              <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -84,16 +97,6 @@
                 <marker date="1431601208000" expanded="true" signature="5981:6161" placeholder="SELECT * FRO..process..." />
                 <marker date="1431601208000" expanded="true" signature="6377:6432" placeholder="SELECT * FRO..process..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="4544" max-vertical-offset="5520">
-              <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -171,7 +174,6 @@
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/config/dailymotion.php" />
         <option value="$PROJECT_DIR$/app/models/BackgroundProcess.php" />
-        <option value="$PROJECT_DIR$/app/libs/VideoHelper.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/dailymotion.template.php" />
         <option value="$PROJECT_DIR$/app/libs/CacheAccessor.php" />
@@ -181,6 +183,7 @@
         <option value="$PROJECT_DIR$/app/models/Chanel.php" />
         <option value="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" />
         <option value="$PROJECT_DIR$/app/models/Movie.php" />
+        <option value="$PROJECT_DIR$/app/libs/VideoHelper.php" />
       </list>
     </option>
   </component>
@@ -410,7 +413,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32267037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32267037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32545203" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -480,29 +483,9 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/libs/VideoHelper.php</url>
-          <line>182</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/routes.php</url>
           <line>48</line>
           <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php</url>
-          <line>72</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php</url>
-          <line>62</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php</url>
@@ -729,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2264152" vertical-offset="4042" max-vertical-offset="20840">
           <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/VideoHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3439" max-vertical-offset="3820">
-          <caret line="187" column="33" selection-start-line="187" selection-start-column="33" selection-end-line="187" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -876,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.884617" vertical-offset="973" max-vertical-offset="3320">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="960">
@@ -928,12 +896,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Movie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8383372" vertical-offset="377" max-vertical-offset="1580">
+        <state vertical-scroll-proportion="-13.961538" vertical-offset="377" max-vertical-offset="1580">
           <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
           <folding>
             <marker date="1432551968000" expanded="true" signature="1002:1486" placeholder="select id,ch..movie..." />
             <marker date="1432551968000" expanded="true" signature="2099:2125" placeholder="UPDATE movie..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/VideoHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7692308" vertical-offset="2980" max-vertical-offset="3740">
+          <caret line="155" column="20" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39849624" vertical-offset="2655" max-vertical-offset="3320">
+          <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

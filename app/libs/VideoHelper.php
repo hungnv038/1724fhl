@@ -175,17 +175,13 @@ class VideoHelper {
 
         $description="Ung dung tong hop video highlight cac tran dau tu cac giai dau hang dau chau Au: http://appvn.com/android/details?id=app.michael.fhl";
 
-        $result = $api->post(
+        $api->post(
            '/me/videos',
             array('url' => $url, 'title' => $title,'description'=>$description,'published'=>true,'private'=>false,'channel'=>'sport')
         );
 
-        $result=(object)$result;
-
         // update value to database
         unlink($videoPath);
-
-        Movie::getInstance()->update(array('dailymotion_url'=>$result->id),array('url'=>$url));
     }
 
 }
