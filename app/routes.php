@@ -33,6 +33,8 @@ Route::get('/crons/chanels','BackgroundProcessController@createChanelsCron');
 Route::get('/crons/video/upload','BackgroundProcessController@uploadVideo');
 Route::get('/crons/video/download','BackgroundProcessController@downloadVideo');
 
+Route::get('/crons/manual/video/upload','HomeController@upload');
+Route::get('/crons/manual/video/download','HomeController@download');
 // LOGS
 Route::post('/deletelogs','LogController@deleteLog');
 Route::get('/logs','LogController@getLog');
@@ -44,6 +46,10 @@ Route::match(array('GET', 'POST'), '/setApiDoc','LogController@setApiDoc');
 Route::post('/feedback','FeedbackController@feedback');
 
 Route::get('/videos/{id}','YoutubeController@getVideo');
+
+Route::get('/home/videos','HomeController@getAddNewVideoView');
+
+Route::post('/service/videos','HomeController@postNewVideo');
 
 Route::get('/test',function() {
     $link="http://cdn.phoenix.intergi.com/18132/videos/3576547/video-sd.mp4?hosting_id=18132";

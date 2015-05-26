@@ -153,7 +153,7 @@ class VideoHelper {
         }
         return $first;
     }
-    public function upload($file_name,$title,$url) {
+    public function upload($file_name,$title,$chanel) {
 
         $videoPath=Constants::SYS_DOWNLOAD_FOLDER."/".$file_name;
 
@@ -173,15 +173,15 @@ class VideoHelper {
 
         $url = $api->uploadFile($videoPath);
 
+        // delete file
+        unlink($videoPath);
+
         $description="Ung dung tong hop video highlight cac tran dau tu cac giai dau hang dau chau Au: http://appvn.com/android/details?id=app.michael.fhl";
 
         $api->post(
            '/me/videos',
-            array('url' => $url, 'title' => $title,'description'=>$description,'published'=>true,'private'=>false,'channel'=>'sport')
+            array('url' => $url, 'title' => $title,'description'=>$description,'published'=>true,'private'=>false,'channel'=>$chanel)
         );
-
-        // update value to database
-        unlink($videoPath);
     }
 
 }

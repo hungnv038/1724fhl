@@ -11,4 +11,6 @@ class Constants
     const MOVIE_VIEW='view';
     const MOVIE_LIKE='like';
     const SYS_DOWNLOAD_FOLDER="video_downloads";
+    const VIDEO_YOUTUBE=1;
+    const VIDEO_LINK=2;
 }

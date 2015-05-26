@@ -138,7 +138,7 @@ class BackgroundProcessController extends BaseController {
 
             $videoHelper=new VideoHelper();
 
-            $videoHelper->upload($file_name,$title,$url);
+            $videoHelper->upload($file_name,$title,'sport');
         } catch(Exception $e) {
             return ResponseBuilder::error($e);
         }
