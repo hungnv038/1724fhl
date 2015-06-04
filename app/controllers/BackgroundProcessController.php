@@ -226,7 +226,7 @@ class BackgroundProcessController extends BaseController {
         $waitings=$videoDao->getObjectsByField(array('status'=>'waiting','current_step'=>'added'));
 
         foreach ($waitings as $video) {
-            BackgroundProcess::getInstance()->throwProcess('/crons/video/download',array('video_id'=>$video->id));
+            BackgroundProcess::getInstance()->throwProcess('/crons/manual/video/download',array('video_id'=>$video->id));
         }
     }
 
@@ -235,7 +235,7 @@ class BackgroundProcessController extends BaseController {
         $waitings=$videoDao->getObjectsByField(array('status'=>'waiting','current_step'=>'downloaded'));
 
         foreach ($waitings as $video) {
-            BackgroundProcess::getInstance()->throwProcess('/crons/video/upload',array('video_id'=>$video->id));
+            BackgroundProcess::getInstance()->throwProcess('/crons/manual/video/upload',array('video_id'=>$video->id));
         }
     }
 }

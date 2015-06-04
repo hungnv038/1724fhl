@@ -33,7 +33,12 @@ Route::get('/crons/chanels','BackgroundProcessController@createChanelsCron');
 Route::get('/crons/video/upload','BackgroundProcessController@uploadVideo');
 Route::get('/crons/video/download','BackgroundProcessController@downloadVideo');
 
+Route::get('/crons/video/makedownload','BackgroundProcessController@makeDownloadVideoCron');
+Route::get('/crons/video/makeupload','BackgroundProcessController@makeUploadVideoCron');
+
 Route::get('/crons/youtube/chanels/{id}','BackgroundProcessController@getYoutubeChanelVideos');
+Route::get('/crons/youtube/chanels','BackgroundProcessController@createYoutubeChanelCron');
+
 Route::get('/crons/manual/video/upload','HomeController@upload');
 Route::get('/crons/manual/video/download','HomeController@download');
 // LOGS

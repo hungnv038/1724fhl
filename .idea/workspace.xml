@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a70f17-3f5e-4e14-a237-8566756fb955" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/home/js/homeModule.js" afterPath="$PROJECT_DIR$/public/home/js/homeModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" afterPath="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1724fhl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,17 +67,17 @@
       <file leaf-file-name="BackgroundProcessController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.653846" vertical-offset="3257" max-vertical-offset="4940">
-              <caret line="178" column="48" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
+            <state vertical-scroll-proportion="-8.192307" vertical-offset="4427" max-vertical-offset="4940">
+              <caret line="232" column="39" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeModule.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeModule.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/home/js/homeModule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.043572985" vertical-offset="0" max-vertical-offset="2440">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2440">
               <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               <folding />
             </state>
@@ -122,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6153846" vertical-offset="400" max-vertical-offset="1100">
-              <caret line="35" column="92" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="92" />
+            <state vertical-scroll-proportion="0.35334873" vertical-offset="387" max-vertical-offset="1200">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -166,13 +168,13 @@
         <option value="$PROJECT_DIR$/app/models/Video.php" />
         <option value="$PROJECT_DIR$/app/libs/Constants.php" />
         <option value="$PROJECT_DIR$/app/libs/VideoHelper.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/models/YoutubeChanel.php" />
         <option value="$PROJECT_DIR$/app/libs/YoutubeVideoHelper.php" />
-        <option value="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" />
         <option value="$PROJECT_DIR$/app/views/home/add_video.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/public/home/js/homeModule.js" />
+        <option value="$PROJECT_DIR$/app/controllers/BackgroundProcessController.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -442,7 +444,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32078102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32078102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39191073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -502,7 +504,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/routes.php</url>
-          <line>55</line>
+          <line>60</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -869,14 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6153846" vertical-offset="400" max-vertical-offset="1100">
-          <caret line="35" column="92" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Video.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.307693" vertical-offset="0" max-vertical-offset="480">
@@ -897,14 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="580">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.653846" vertical-offset="3257" max-vertical-offset="4940">
-          <caret line="178" column="48" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -947,8 +933,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/home/js/homeModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043572985" vertical-offset="0" max-vertical-offset="2440">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2440">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BackgroundProcessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.192307" vertical-offset="4427" max-vertical-offset="4940">
+          <caret line="232" column="39" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35334873" vertical-offset="387" max-vertical-offset="1200">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="35" />
           <folding />
         </state>
       </provider>
