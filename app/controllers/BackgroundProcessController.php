@@ -27,6 +27,19 @@ class BackgroundProcessController extends BaseController {
         }
         return;
     }
+    public function createYoutubeChanelCron() {
+        Log::info("Crons Youtube Chanel run");
+        $youtubeChanel= new YoutubeChanel();
+        $chanels=$youtubeChanel->getObjectsByField(array('active'=>1));
+        foreach ($chanels as $chanel) {
+            BackgroundProcess::getInstance()->throwProcess("/crons/youtube/chanels/".$chanel->id);
+        }
+    }
+    public function createYoutubeVideoCron($chanel_id) {
+        $youtubeChanel=new YoutubeChanel();
+        $chanel=$youtubeChanel->getOneObjectByField(array('id'=>$chanel_id));
+
+    }
     public function createChanelsCron() {
         Log::info("Crons/Chanels run");
         $chanels=Chanel::getInstance()->getObjectsByField(array());
@@ -156,5 +169,73 @@ class BackgroundProcessController extends BaseController {
             return ResponseBuilder::error($e);
         }
 
+    }
+
+    public function getYoutubeChanelVideos($chanel_id) {
+        $chanel=YoutubeChanel::getInstance()->getOneObjectByField(array('id'=>$chanel_id));
+        if($chanel==null) {
+            return;
+        }
+        $youtubeHelper=new YoutubeVideoHelper();
+        $result=$youtubeHelper->getChanelVideos($chanel->playlist_id);
+
+        $videoItems=$result->items;
+        $videos=array();
+        foreach ($videoItems as $item) {
+            $title=$item->snippet->title;
+            $id=$item->snippet->resourceId->videoId;
+            $videos[$id]=array('id'=>$id,'title'=>$title);
+        }
+
+        // check video is existing or not
+        $video_ids=array_keys($videos);
+        $exists=Video::getInstance()->getObjectsByFields(array('id'=>$video_ids));
+        if(count($exists)==count($video_ids)){
+            // all got videos are existing
+            return;
+        } else {
+            // get existed video
+            $exist_ids=array();
+            foreach ($exists as $item) {
+                $exist_ids[]=$item->id;
+            }
+        }
+        // insert new video
+        $new_ids=array_diff($video_ids,$exist_ids);
+        $new_videos=array();
+        foreach ($new_ids as $id) {
+            $video=$videos[$id];
+            $new_videos[]=array(
+                'id'=>$id,
+                'title'=>$video['title'],
+                'description'=>$video['title'],
+                'type'=>Constants::VIDEO_YOUTUBE,
+                'created_at'=>array('now()'),
+                'chanel'=>$chanel->dailychanel
+            );
+        }
+
+        // insert
+        Video::getInstance()->inserts(array('id','title','description','type','created_at'),$new_videos);
+
+
+    }
+
+    public function makeDownloadVideoCron() {
+        $videoDao=new Video();
+        $waitings=$videoDao->getObjectsByField(array('status'=>'waiting','current_step'=>'added'));
+
+        foreach ($waitings as $video) {
+            BackgroundProcess::getInstance()->throwProcess('/crons/video/download',array('video_id'=>$video->id));
+        }
+    }
+
+    public function makeUploadVideoCron() {
+        $videoDao=new Video();
+        $waitings=$videoDao->getObjectsByField(array('status'=>'waiting','current_step'=>'downloaded'));
+
+        foreach ($waitings as $video) {
+            BackgroundProcess::getInstance()->throwProcess('/crons/video/upload',array('video_id'=>$video->id));
+        }
     }
 }

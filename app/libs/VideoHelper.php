@@ -143,15 +143,27 @@ class VideoHelper {
     }
     private function getMp4Url($avaiable_formats) {
         $first=null;
+        $hd720=null;
+        $mp4=null;
         foreach ($avaiable_formats as $format) {
             if($format['type']=='video/mp4' ) {
                 $first = $format;
                 if ($format['quality'] == 'medium') {
-                    return $format;
+                    $mp4=$format;
+                }
+                if($format['quality']=="hd720") {
+                    $hd720=$format;
                 }
             }
         }
-        return $first;
+        if($hd720!=null)
+        {
+            return $hd720;
+        } else if($mp4!=null) {
+            return $mp4;
+        } else {
+            return $first;
+        }
     }
     public function upload($file_name,$title,$chanel) {
 
@@ -176,7 +188,7 @@ class VideoHelper {
         // delete file
         unlink($videoPath);
 
-        $description="Ung dung tong hop video highlight cac tran dau tu cac giai dau hang dau chau Au: http://appvn.com/android/details?id=app.michael.fhl";
+        $description=$title;
 
         $api->post(
            '/me/videos',

@@ -1,5 +1,5 @@
 var HomeModule = {
-    urlApi: '/fhl',
+    urlApi: '/1724fhl/public',
     addNewYoutubeVideo : function (myself) {
         var video_id=$('#video_id_youtube').val();
         var title=$('#title_youtube').val();
@@ -75,6 +75,43 @@ var HomeModule = {
                 $('#div_result2').addClass("alert-danger");
             }
         });
+    },
+    addNewYoutubeChanel : function (myself) {
+        var chanel_name=$('#chanel_name').val();
+        var group_chanel=$('#publish_to').val();
+
+        $.ajax({
+            url: this.urlApi+'/service/videos',
+            data: {type:3,chanel_name:chanel_name,chanel_id:group_chanel},
+            type : "POST",
+            beforeSend: function () {
+                $("#btnSave_youtube_chanel").html('Saving...');
+            },
+            success: function (result) {
+                $("#btnSave_youtube_chanel").html('Save');
+                if(result.error==0) {
+                    $("#div_result3").html("Success");
+                    $('#div_result3').removeClass();
+                    $('#div_result3').addClass("alert");
+                    $('#div_result3').addClass("alert-success");
+                } else {
+                    $("#div_result3").html(result.html);
+                    $('#div_result3').removeClass();
+                    $('#div_result3').addClass("alert");
+                    $('#div_result3').addClass("alert-danger");
+                }
+
+            },
+            error: function (jqXHR) {
+                $("#btnSave_youtube_chanel").html('Save');
+                $("#div_result3").html("Error happened");
+                $('#div_result3').removeClass();
+                $('#div_result3').addClass("alert");
+                $('#div_result3').addClass("alert-danger");
+            }
+        });
     }
+
+
 
 };

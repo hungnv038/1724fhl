@@ -8,12 +8,37 @@
         $groups=Config::get('video_group');
     ?>
     <ul class="nav nav-tabs">
-        <li class="active"><a href="#youtube_video" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Youtube Video </a></li>
+        <li class="active"><a href="#youtube_chanel" data-toggle="tab"><span class="glyphicon glyphicon-th"></span> Video from Youtube Chanel </a></li>
+        <li ><a href="#youtube_video" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Youtube Video </a></li>
         <li><a href="#link_video" data-toggle="tab"><span class="glyphicon glyphicon-bell"></span> Video from link </a></li>
+
     </ul>
     <div class="tabbable">
         <div class="tab-content">
-            <div class="tab-pane active" id="youtube_video">
+            <div class="tab-pane active" id="youtube_chanel">
+                <div id="div_youtube_chanel" style="padding-top: 10px;">
+                    <div class="alert alert-success hidden" id="div_result3"> Success </div>
+                    <form role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="publish_to">Publish to Dailymotion Chanel :</label>
+                            <select id="publish_to"
+                                    class="form-control">
+                                @foreach($groups as $key=>$value)
+
+                                    <option value="{{$key}}">{{$value}}</option>
+
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="chanel_name">Youtube Video Id:</label>
+                            <input type="text" class="form-control" id="chanel_name" placeholder="Enter youtube chanel name" required>
+                        </div>
+                        <button type="submit" id="btnSave_youtube_chanel" class="btn btn-primary" onclick="HomeModule.addNewYoutubeChanel(this); return false;">Save</button>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane" id="youtube_video">
                 <div id="div_youtube" style="padding-top: 10px;">
                     <div class="alert alert-success hidden" id="div_result1"> Success </div>
                     <form role="form">
@@ -76,6 +101,7 @@
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 
