@@ -1,5 +1,5 @@
 var HomeModule = {
-    urlApi: '/1724fhl/public',
+    urlApi: '/fhl',
     addNewYoutubeVideo : function (myself) {
         var video_id=$('#video_id_youtube').val();
         var title=$('#title_youtube').val();
