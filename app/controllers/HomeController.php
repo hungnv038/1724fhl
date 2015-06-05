@@ -67,6 +67,7 @@ class HomeController extends BaseController {
                 $video_helper->upload($video->file_name,$video->title,$video->chanel);
             } catch(Exception $e) {
                 Video::getInstance()->update(array('status'=>'waiting'),array('id'=>$video_id));
+                throw $e;
             }
 
             Video::getInstance()->update(array('status'=>'waiting','current_step'=>'uploaded'),array('id'=>$video_id));
@@ -103,6 +104,7 @@ class HomeController extends BaseController {
             } catch(Exception $e) {
                 //rollback
                 Video::getInstance()->update(array('status'=>'waiting'),array('id'=>$video_id));
+                throw $e;
             }
 
             Video::getInstance()->update(array('status'=>'waiting','current_step'=>'downloaded','file_name'=>$filename),array('id'=>$video_id));
