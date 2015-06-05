@@ -55,7 +55,7 @@ class HomeController extends BaseController {
             if($video->status!='waiting' || $video->current_step!='downloaded') {
                 return;
             }
-            if($video->filename==null || $video->filename="") {
+            if($video->file_name==null || $video->file_name="") {
                 Video::getInstance()->update(array('current_step'=>'added'),array('id'=>$video_id));
                 return;
             }
